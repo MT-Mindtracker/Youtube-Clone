@@ -1,0 +1,14 @@
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body{
+  /* Adiyil ullath motham INHERITED aavum*/
+  margin: 0px;
+  padding: 20px;
+  padding-top: 76px;
+  padding-left: 92px;
+  background-color: rgba(248, 248, 248);
+  font-family: roboto, arial;
+}

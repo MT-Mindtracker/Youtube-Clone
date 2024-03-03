@@ -1,0 +1,160 @@
+
+
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 30px;
+  
+}
+
+@media (max-width: 1100px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+@media (max-width: 825px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px){
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 1000px){
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-stats{
+    font-size: 14px;
+  }
+}
+
+
+
+
+.thumbnail-div{
+  vertical-align: top;
+  position: relative;
+}
+
+.time-div{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.video-card-info{
+  display: grid;
+  grid-template-columns: 48px 1fr;
+}
+
+
+.video-info{
+  vertical-align: top;
+  right: 0;
+  float: right;
+
+}
+
+.channel-tooltip-extra-div,
+.channel-profile-div{
+  display: inline-block;
+  position: relative;
+}
+
+.channel-tooltip-extra-div .channel-tooltip{
+  width: 200px;
+  height: 70px;
+  box-shadow: 0px 0px 8px rgba(0,0 ,0 ,0.3 );
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+  z-index: 201;
+  pointer-events: none;
+}
+.channel-tooltip-extra-div:hover .channel-tooltip{
+  opacity: 1;
+}
+
+
+.channel-tooltip-img{
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.channel-tooltip-title{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.channel-tooltip-sub{
+  font-size: 14px;
+  color: rgb(96,96,96)
+}
+
+
+
+
+.thumbnail-img{
+  width: 100%;
+}
+
+.channel-profile-pic{
+  width: 36px;
+  border-radius: 50px;
+  margin-top: 12px;
+}
+.video-title{
+  font-weight: 500;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 0px;
+  margin-top: 12px;
+  line-height: 20px;
+  color: black;
+}
+.title-link,
+.channel-name-link{
+  text-decoration: none;
+}
+
+.channel-name{
+  color: rgb(96,96,96);
+  height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: top;
+  margin: 0px;
+  margin-top: 8px;
+}
+.video-stats{
+  color: rgb(96,96,96);
+  font-weight: 400;
+  font-size: 12px;
+  vertical-align: top;
+  margin: 0px;
+  margin-bottom: 16px;
+}
